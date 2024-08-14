@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity(R.layout.main_layout) {
         val player = ExoPlayer.Builder(this)
             .build()
         playerView.player = player
-        player.setVideoEffects(listOf())
+        player.setVideoEffects(listOf()) // The video will play with this line commented out
         player.setMediaItem(MediaItem.fromUri("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"))
         player.addListener(object: Player.Listener{
             override fun onIsPlayingChanged(isPlaying: Boolean) {
@@ -28,6 +28,6 @@ class MainActivity : ComponentActivity(R.layout.main_layout) {
             }
         })
         player.prepare()
-        player.play()
+        player.play()g
     }
 }
