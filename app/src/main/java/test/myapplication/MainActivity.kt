@@ -28,6 +28,6 @@ class MainActivity : ComponentActivity(R.layout.main_layout) {
             }
         })
         player.prepare()
-        player.play()g
+        player.play()
     }
 }
